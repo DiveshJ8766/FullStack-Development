@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowspan & Colspan</title>
+    <meta name="author" content="Divesh Jadhav" />
+    <meta name="keywords" content="divesh jadhav,divesh,jadhav,software developer,web developer">
+    <meta name="description" content="This is description of Website">
+    <meta name="copyright" content="all rights reserved by divesh jadhav">
+    <link rel="icon" href="favicon.ico">
+
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            caption-side: bottom;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Table Basic</h4>
+    <table>
+        <caption>Student Marks Table</caption>
+        <colgroup>
+            <col>
+            <col style="background-color: pink;">
+        </colgroup>
+        <thead style="background-color: lightcoral;">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody style="background-color: lightgreen;">
+            <tr>
+                <th>Trupti</th>
+                <td>28</td>
+                <td>98</td>
+            </tr>
+            <tr style="background-color: lightseagreen;">
+                <th>Manas</th>
+                <td>20</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <th>Anand</th>
+                <td>23</td>
+                <td>35</td>
+            </tr>
+            <tr style="background-color: lightslategrey;">
+                <th>Pranali</th>
+                <td>26</td>
+                <td>97</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>State of Health</caption>
+        <colgroup>
+            <col span="3" style="background-color: green;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th rowspan="2">State of Health</th>
+                <th colspan="2">Fasting Value</th>
+                <th>After Eating</th>
+            </tr>
+            <tr>
+                <th>Minimum</th>
+                <th>Maximum</th>
+                <th>2 hours after eating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Healthy</td>
+                <td>70</td>
+                <td>100</td>
+                <td>Less than 140</td>
+            </tr>
+            <tr>
+                <td>Pre-Diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140 to 200</td>
+            </tr>
+            <tr>
+                <td>Diabetes</td>
+                <td>More than 126</td>
+                <td>N/A</td>
+                <td>More than 200</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>School Time Table</caption>
+        <colgroup>
+            <col>
+            <col span="3" style="background-color: yellow;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="6">Time Table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="6">Hours</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <th colspan="5">Lunch</th>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td rowspan="2">Project</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>School Time Table</caption>
+        <colgroup>
+            <col>
+            <col span="1" style="background-color: yellow;">
+            <col>
+            <col span="1" style="background-color: red;">
+            <col style="visibility: collapse;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="6">Time Table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="6">Hours</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <th colspan="5">Lunch</th>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td rowspan="2">Project</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

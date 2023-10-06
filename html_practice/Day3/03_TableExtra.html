@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styles</title>
+    <style>
+        th,td{
+            /* border: 1px solid black; */
+            text-align: center;
+            /* border-radius: 10px; */
+            padding: 4px;
+        }
+
+        /* th:nth-child(even){
+            background-color: lightseagreen;
+        }
+
+        td:nth-child(even){
+            background-color: lightpink;
+        }
+
+        td:nth-child(odd){
+            background-color: lightgrey;
+        }
+
+        th:nth-child(odd){
+            background-color: lightskyblue;
+        } */
+
+        tr:hover{
+            background-color: lightcyan;
+        }
+
+        tr{
+            border-bottom: 1px solid grey;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            caption-side: bottom;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="firstTable">
+        <table style="width: 70%;">
+            <caption>School Time Table</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thur</th>
+                    <th>Fri</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>8:00</th>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>History</td>
+                    <td>Biology</td>
+                    <td>Physics</td>
+                </tr>
+                <tr>
+                    <th>9:00</th>
+                    <td>Biology</td>
+                    <td>Chemistry</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Geography</td>
+                </tr>
+                <tr>
+                    <th>10:00</th>
+                    <td>Math</td>
+                    <td>Chemistry</td>
+                    <td>Physics</td>
+                    <td>Biology</td>
+                    <td>Hindi</td>
+                </tr>
+                <tr>
+                    <th>11:00</th>
+                    <td>Hindi</td>
+                    <td>Marathi</td>
+                    <td>English</td>
+                    <td>Math</td>
+                    <td>Chemistry</td>
+                </tr>
+                <tr>
+                    <th>12:00</th>
+                    <td>Math</td>
+                    <td>Marathi</td>
+                    <td>English</td>
+                    <td>Civics</td>
+                    <td>Social</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="secondTable">
+        <table style="width: 90%;">
+            <caption>School Time Table</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thur</th>
+                    <th>Fri</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>8:00</th>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>History</td>
+                    <td>Biology</td>
+                    <td>Physics</td>
+                </tr>
+                <tr>
+                    <th>9:00</th>
+                    <td>Biology</td>
+                    <td>Chemistry</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Geography</td>
+                </tr>
+                <tr>
+                    <th>10:00</th>
+                    <td>Math</td>
+                    <td>Chemistry</td>
+                    <td>Physics</td>
+                    <td>Biology</td>
+                    <td>Hindi</td>
+                </tr>
+                <tr>
+                    <th>11:00</th>
+                    <td>Hindi</td>
+                    <td>Marathi</td>
+                    <td>English</td>
+                    <td>Math</td>
+                    <td>Chemistry</td>
+                </tr>
+                <tr>
+                    <th>12:00</th>
+                    <td>Math</td>
+                    <td>Marathi</td>
+                    <td>English</td>
+                    <td>Civics</td>
+                    <td>Social</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+
+</html>

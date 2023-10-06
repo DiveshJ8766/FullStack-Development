@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source set</title>
+</head>
+<body>
+    <picture>
+        <source media="(min-width:600px)" srcset="photo-2.avif">
+        <source media="(min-width:400px)" srcset="photo-3.avif">
+        <img src="photo-1.avif"  alt="This is photo of mountain"  style="width: auto;">
+    </picture>
+
+    <img src="photo-2.avif" srcset="photo-2.avif 1000w, photo-3.avif 2000w,photo-1.avif 3000w" alt="Responsive Image">
+
+</body>
+</html>

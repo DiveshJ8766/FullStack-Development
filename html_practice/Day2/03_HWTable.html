@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HomeWork Table</title>
+    <meta name="viewport" content="width=device-width;initial-scale=1.0" />
+    <meta name="description" content="THis is home of Table Tag" />
+    <meta name="author" content="Divesh Jadhav" />
+    <meta name="copyright" content="All rights Reserved By Divesh Jadhav" />
+    <meta name="keywords" content="Divesh Jadhav,Jadhav,Divesh,Software Developer,Web Developer" />
+    <link rel="icon" href="favicon.ico" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            caption-side: bottom;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        caption {
+            margin-top: 5px;
+        }
+
+        div {
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>HTML Table</caption>
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m.</td>
+                <td rowspan="2">5:00 p.m.</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 a.m.</td>
+                <td>11:00 a.m.</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+            <tr>
+                <td>11:00 a.m.</td>
+                <td>2:00 p.m.</td>
+
+            </tr>
+            <tr>
+                <td>2:00 p.m.</td>
+                <td>5:00 p.m.</td>
+                <td>XSL Transformation</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 a.m.</td>
+                <td>12:00 p.m.</td>
+                <td>XSL Formatting Objects</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Table Using Form</caption>
+        <form action="https://www.instagram.com">
+            <thead>
+                <tr>
+                    <th colspan="2">Welcome to Instagram</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="name">Username : </label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="username" placeholder="Enter Your Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">Password : </label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password" placeholder="Enter Your Password">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit" />
+                        <input type="button" value="Know more" />
+                    </td>
+                </tr>
+            </tfoot>
+        </form>
+    </table>
+    <form action="">
+        <div class="form-group">
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+        </div>
+        <div>
+            <span>Gender : </span>
+            <div class="form-group">
+                <input id="male" name="gender" type="radio">
+                <label for="male">Male</label>
+            </div>
+            <div class="form-group">
+                <input id="female" name="gender" type="radio">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div>
+            <span>Select Days : </span>
+            <span class="form-group">
+                <input type="checkbox" id="monday">
+                <label for="monday">Monday</label>
+            </span>
+            <span class="form-group">
+                <input type="checkbox" id="tuesday">
+                <label for="tuesday">Tuesday</label>
+            </span>
+            <span class="form-group">
+                <input type="checkbox" id="wednesday">
+                <label for="wednesday">Wednesday</label>
+            </span>
+            <span class="form-group">
+                <input type="checkbox" id="Thursday">
+                <label for="Thursday">Thursday</label>
+            </span>
+            <span class="form-group">
+                <input type="checkbox" id="friday">
+                <label for="friday">Friday</label>
+            </span>
+            <span class="form-group">
+                <input type="checkbox" id="saturday">
+                <label for="saturday">Saturday</label>
+            </span>
+            <span class="form-group">
+                <input type="checkbox" id="sunday">
+                <label for="sunday">Sunday</label>
+            </span>
+        </div>
+        <div class="form-group">
+            <span>Select Range : </span>
+            <input type="range">
+        </div>
+        <div class="form-group">
+            <span>Select Date : </span>
+            <input type="date">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message : </label><br />
+            <textarea name="message" id="message" cols="30" rows="7"
+                placeholder="Please Enter Your Message ....."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="day">Select Day : </label>
+            <select id="day">
+                <optgroup label="First 2 Days">
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                </optgroup>
+                <optgroup label="Next 3 Days">
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                </optgroup>
+                <optgroup label="Last 2 Days">
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday" selected>Sunday</option>
+                </optgroup>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
