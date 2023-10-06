@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in Css</title>
+
+    <style>
+        p {
+            background-color: crimson;
+            color: white;
+            padding: 10px;
+        }
+
+        /* ID Selector */
+        #para {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* Class Selector */
+        .para {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* Multiple Selector */
+        table,th,td{
+            border: 10px solid black;
+            border-collapse: collapse;
+            text-align: center;padding: 10px;
+        }
+
+        .small{
+            font-size: small;
+        }
+
+        .large{
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, officiis.</p>
+        <p class="para">Ipsa aut nobis ducimus quam labore optio nostrum illo praesentium!</p>
+        <p>Excepturi ullam quae alias quas officiis. Assumenda, expedita! Minima, cum.</p>
+    </div>
+
+    <div>
+        <table>
+            <thead>
+                <th>Month</th>
+                <th>Salary</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>June</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>3000</td>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td>1000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <th>6000</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div>
+        <h1 class="small">This is H1 Heading</h1>
+        <h2 class="small">This is H2 Heading</h2>
+        <h3 class="small">This is H3 Heading</h3>
+        <h4 class="large">This is H4 Heading</h4>
+        <h5 class="large">This is H5 Heading</h5>
+        <h6 class="large">This is H6 Heading</h6>
+    </div>
+
+</body>
+
+</html>

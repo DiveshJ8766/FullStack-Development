@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        button:hover{
+            background-color: lightcoral;
+            color: white;
+            border: 1px solid black;
+        }
+
+        div+div{
+            padding: 30px;
+        }
+
+        a:link{
+            color: blue;
+        }
+
+        a:visited{
+            color: lightcoral;
+        }
+
+        a:hover{
+            color: lightskyblue;
+        }
+
+        a:active{
+            color: lightseagreen;
+        }
+
+        .new{
+            height: 50px;
+            width: 500px;
+            background-color: lightcoral;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <button>Hello Ji</button>
+    </div>
+
+    <div>
+        <a href="https://www.thecodehelp.in">The Code Help</a><br>
+        <a href="https://www.thecodehelp.in">The Code Help</a><br>
+        <a href="https://www.thecodehelp.in">The Code Help</a><br>
+        <a href="https://www.thecodehelp.in">The Code Help</a><br>
+    </div>
+
+    <div class="new">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, consequuntur.</p>
+    </div>
+    <div class="new2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, consequuntur.</p>
+    </div>
+</body>
+</html>

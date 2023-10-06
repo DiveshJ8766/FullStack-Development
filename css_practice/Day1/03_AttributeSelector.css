@@ -1,0 +1,45 @@
+a[target]{
+    background-color: lightcoral;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+a[target="_blank"]{
+    background-color: lightgreen;
+}
+
+a[target="_self"]{
+    background-color: lightskyblue;
+}
+
+a[target="_top"]{
+    background-color: lightslategray;
+}
+
+.first,.second,.third,.fourth,.fifth{
+    background-color: lightcoral;
+    padding: 5px;
+    margin: 10px;
+}
+
+.first p[title~="flower"]{
+    background-color: lightgray;
+}
+
+.second p[title|="flower"]{
+    background-color: lightgreen;
+}
+
+.third p[title^="flower"]{
+    background-color: lightblue;
+}
+
+.fourth p[title$="flower"]{
+    background-color: lightseagreen;
+}
+
+.fifth p[title*="er"]
+{
+    background-color: lightyellow;
+}
