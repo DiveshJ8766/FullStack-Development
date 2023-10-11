@@ -31,6 +31,8 @@ for (let key in str) {
     console.log(`${key} => ${str[key]}`);
 }
 
+
+
 //* For in loop in Array
 let arr = [12, "Divesh", true, undefined, null, 0, '0', -0, function () {
     console.log("Hello Jee");
@@ -70,15 +72,130 @@ console.log("Values of Set : ", myset);
 console.log(typeof (myset))
 console.log(myset.has(23))
 
+
+console.log(`"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""`)
 //* Making set as Array
 console.log([...myset])
 
 
+//* For each
+let text = "";
+myset.forEach((value) => {
+    text += value + " + Hello \n";
+})
+console.log(text);
+
 //* delete set value
 myset.delete(23);
 
+console.log(`"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""`)
+
 //* looping through Set of Array
-for (let key of myset){
-    console.log("Value of Array : ",key)
+for (let key of myset) {
+    console.log("Value of Array : ", key)
 }
 
+console.log(`"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""`)
+//* Values 
+let it = myset.values();
+
+for (let key of it) {
+    console.log("Iteratable : ", key)
+}
+
+console.log(`"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""`)
+//* Entries 
+let val = myset.entries();
+for (let key of val) {
+    console.log("Entries : ", key)
+}
+
+console.log(`"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""`)
+//* Keys Same as Values
+let ans = myset.keys();
+for (let key of ans) {
+    console.log("Keys : ", key)
+}
+
+
+console.log(`"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""`)
+//* Size And clear 
+myset.clear();
+console.log(myset.size)
+
+console.log(`"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""`)
+//* Sets are Objects
+console.log(myset instanceof Set);
+
+
+console.log(`"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""`)
+//* creation of map
+
+let myMap = new Map();
+
+myMap.set("first", person)
+myMap.set("second", 23);
+myMap.set("Third", 43);
+
+//* for each 
+myMap.forEach((value, key) => {
+    console.log("Key : " + key + " and Value : ", value)
+})
+
+console.log(`"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""`)
+
+//* Entries
+let itemValues = myMap.entries();
+for (let [key, value] of itemValues) {
+    console.log("Key : " + key + " and Value : ", value)
+
+}
+
+//* Values
+let item = myMap.values();
+for (let ans of item) {
+    console.log(ans);
+}
+
+//* Keys
+let keys = myMap.keys();
+for (let ans of keys) {
+    console.log(ans);
+}
+
+//* Type and Instance
+console.log(typeof(myMap))
+console.log(myMap instanceof Map);
+
+//* has
+console.log(myMap.has("first"));
+console.log(myMap.has("second"));
+
+//* Object as keys
+const person1 = {name:"Nayan",age:23};
+const person2 = {name:"Vaibhav",age:34};
+const person3 = {name:"Yash",age:30};
+
+let nextMap = new Map();
+
+nextMap.set(person1,"Nayan Jadhav");
+nextMap.set(person2,"Vaibhav Borse");
+nextMap.set(person3,"Yash Chirmade");
+
+console.log("Value is : ",nextMap)
+
+nextMap.forEach((value,key)=>{
+    console.log(value,key);
+})
+
+//* get values
+console.log(person1);
+console.log(person2);
+console.log(person3);
+
+//* size and clear
+console.log(nextMap.size);
+
+nextMap.clear();
+
+console.log(nextMap.size);
