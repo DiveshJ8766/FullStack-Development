@@ -2,6 +2,11 @@ let person ={
     name:"divesh",
     age:23,
     skill:["JS","React","Javascript"],
+    address:{
+        city:"Nashik",
+        state:"Maharashtra",
+        country:"Bharat"
+    },
     draw:function(){
         console.log("Hello Jee");
     },
