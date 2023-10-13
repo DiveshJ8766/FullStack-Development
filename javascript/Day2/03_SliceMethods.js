@@ -107,4 +107,56 @@ console.log(strArray);
 console.log(str.split(""));
 
 
-//? String search
+//? String search Methods
+let text = "This is new text and new color of text is pink";
+
+//* Indexof
+console.log(text.indexOf("new"));
+
+//* giving start position
+console.log(text.indexOf("new",12));
+
+//* Last Index of
+console.log(text.lastIndexOf("new"));
+
+//*giving Starting Posiiton
+console.log(text.lastIndexOf("new",20));
+
+//* If value not Found
+console.log(text.indexOf(" "));
+console.log(text.lastIndexOf(" "))
+
+//* Search Method
+console.log(text.search("new"));
+console.log(text.search(/new/));
+
+//* Match Method
+let ans = text.match(/i/gi);
+console.log("Character i found : ",ans.length,"times")
+for(let val of ans){
+    console.log("Values : ",val);
+}
+
+//* MatchAll Method
+let iterator = text.matchAll("i");
+console.log(iterator)
+for(let val1 of iterator){
+   console.log("Founded at index : ",val1.index)
+}
+
+
+//* includes
+console.log(text.includes("new"));
+console.log(text.includes("NEW"));
+console.log(text.includes(""));
+
+//* Startswith
+console.log(text.startsWith("Th"));
+console.log(text.startsWith("This"));
+console.log(text.startsWith("new"));
+
+//* EndsWith
+console.log(text.endsWith("nk"));
+console.log(text.endsWith("pink"));
+console.log(text.endsWith("new"));
+
