@@ -85,3 +85,22 @@ console.log("d : ",d);
 
 let e = fruits.slice(2,-3);
 console.log("e : ",e);
+
+//? Indexof 
+console.log("Fruit : ",fruits)
+
+console.log(fruits.indexOf("Alto"));
+console.log(fruits.indexOf("Dragonfruit"));
+
+//* Element present in array or not (Not recommended)
+if(fruits.indexOf("Alto")!==-1){
+    console.log("Element Present :)");
+}else{
+    console.log("Element Not Present :(");
+}
+
+
+console.log(fruits.indexOf("Alto",15));
+
+//? Includes
+console.log(fruits.includes("Alto"));
