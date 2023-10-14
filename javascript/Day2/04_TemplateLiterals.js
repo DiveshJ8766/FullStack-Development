@@ -162,3 +162,27 @@ console.log("Milliseconds : ",date.getUTCMilliseconds());
 
 //? getTimezoneOffset
 console.log("Difference Between Local And Utc : ",date.getTimezoneOffset());
+
+const d = new Date();
+d.setDate(29);
+
+console.log("Date : ",d.toDateString())
+d.setFullYear(2029);
+console.log("Year : ",d.toDateString());
+d.setHours(22);
+console.log("Hours : ",d.getHours());
+
+
+//? compare two dates
+let text = "";
+const today = new Date();
+const someday = new Date();
+someday.setFullYear(2100, 0, 14);
+
+if (someday > today) {
+  text = "Today is before January 14, 2100.";
+} else {
+  text = "Today is after January 14, 2100.";
+}
+
+console.log(text);
