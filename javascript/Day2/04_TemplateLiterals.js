@@ -72,24 +72,93 @@ console.log(date11.toString());
 //? Date Format
 
 //* Iso Date
-const newDate = new Date("2023/10/25");
-console.log(newDate.toDateString());
+const newDate = new Date("2020-10-12");
+console.log("Date : ",newDate.toString());
+
+const newDate7 = new Date("2028-10");
+console.log("year and Month : ",newDate7.toString())
+
+const newDate8 = new Date("2024");
+console.log("year",newDate8.toString())
 
 //* Short date
-const newDate1 = new Date("10-9-2023");
-console.log(newDate1.toDateString())
+const newDate1 = new Date("2023/10/25");
+console.log(newDate1.toString())
+
+const newDate9 = new Date("2023/10");
+console.log(newDate9.toString())
+
+const newDate10 = new Date("2023");
+console.log(newDate10.toString())
+
 
 //* Long Date
 const newDate2 = new Date("January 1 2023");
-console.log(newDate2.toDateString());
+console.log(newDate2.toString());
 
 //* change Date or month position no matters
 const newDate3 = new Date("jan 1 2024");
-console.log(newDate3.toDateString());
+console.log(newDate3.toString());
 
 const newDate4 = new Date("1 jan 2028")
-console.log(newDate4.toDateString());
+console.log(newDate4.toString());
+
+const newDate5 = new Date("March 1 2026");
+console.log(newDate5.toString());
 
 //? Calculate milliseconds
 const newMilliSeconds = Date.parse("Feb 3 2023");
 console.log("MilliSeonds",newMilliSeconds)
+
+//? Get Methods
+const  date = new Date();
+console.log("Date : ",date.toString());
+console.log("Get Fullyear : ",date.getFullYear());
+
+const months = ["January","Feburary","March","April","May","June","July","August","September","October","November","December"];
+
+console.log("Month : ",date.getMonth());
+console.log("Month : ",months[date.getMonth()]);
+
+const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","saturday","Sunday"];
+
+console.log("Day : ",date.getDay());
+console.log("Day : ",days[date.getDay()-1]);
+console.log("Minutes : ",date.getMinutes());
+console.log("Hours : ",date.getHours());
+console.log("Seconds : ",date.getSeconds());
+console.log("Milliseconds : ",date.getMilliseconds());
+
+//? GetTime
+console.log("Time in Milliseconds : ",date.getTime());
+
+//? Date.now()
+console.log("Date in Milliseconds : ",Date.now() )
+
+//? Date.parse()
+console.log("Date Parse : ",Date.parse(date));
+
+//? No of years passed from 1 jan 1970
+
+const minutes = 1000 * 60;
+const hour = 60 * minutes;
+const day = 24 * hour;
+const year = 360 * day;
+
+console.log("Year Passed : ",Math.round(Date.now()/year))
+
+
+//? UTC GetMethods 
+console.log("Date : ",date.toString());
+console.log("Get Fullyear : ",date.getUTCFullYear());
+console.log("Month : ",date.getUTCMonth());
+console.log("Month : ",months[date.getUTCMonth()]);
+console.log("Day : ",date.getUTCDate());
+console.log("Day : ",days[date.getUTCDay()-1]);
+console.log("Minutes : ",date.getUTCMinutes());
+console.log("Hours : ",date.getUTCHours());
+console.log("Seconds : ",date.getUTCSeconds());
+console.log("Milliseconds : ",date.getUTCMilliseconds());
+
+//? getTimezoneOffset
+console.log("Difference Between Local And Utc : ",date.getTimezoneOffset());
