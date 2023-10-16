@@ -21,3 +21,18 @@ console.log(`\n"""""""""""""""""""""""""""""""""\n`);
 arr.forEach(function(value){
     console.log(`Value of ${arr.indexOf(value)}th Index : ${value}`);
 })
+
+
+//? Joining Array
+let newArr = arr.splice(0,5);
+newArr = newArr.join("-");
+console.log("Join Array By - : ",newArr);
+
+//? Split string
+newArr = newArr.split("-");
+console.log("Split Array : ",newArr);
+
+let message = "This is new message to new user informing about deletion of Account...."
+console.log("Split string Based on i : ",message.split("i"));
+
+console.log(message.split("i").join("&"));
