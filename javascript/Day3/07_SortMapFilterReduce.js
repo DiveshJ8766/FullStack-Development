@@ -127,10 +127,7 @@ console.log("Sorted : ", personNames);
 // personNames.reverse();
 // console.log("Sorted : ",personNames);
 
-
 // console.log(personNames[personNames.length-1].length);
-
-
 const numbers = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"];
 
 const person = {};
@@ -142,6 +139,7 @@ for (let i = 1; i <= personNames[personNames.length - 1].length; i++) {
     person[numbers[i - 1]] = ans;
 }
 
+let ans = [];
 for (let val in person) {
     if (person[val].length != 0) {
         person[val] = person[val].sort(function (a, b) {
@@ -152,6 +150,15 @@ for (let val in person) {
             if (temp1 > temp2) return 1;
             return 0;
         })
+        ans.push(person[val]);
     }
 }
-console.log(person)
+
+//* Sorted Names
+let finalOutput = [];
+for(let i = 0; i < ans.length;i++){
+    finalOutput = finalOutput.concat(ans[i]);
+}
+console.log("Final Output : ",finalOutput)
+
+
