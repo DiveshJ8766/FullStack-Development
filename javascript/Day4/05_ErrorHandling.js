@@ -119,11 +119,11 @@ let no = 5;
 let person = {
     firstName : "Divesh",
     lastName : "Jadhav",
-    getName(){
+    get getName(){
         return `${this.firstName} ${this.lastName}`;
     },
-    setName(name){
-        if(typeof(name) !== String){
+    set setName(name){
+        if(typeof(name) !== 'string'){
             throw new Error("You have Not sent an String Value");
         }
         let parts = name.split(" ");
@@ -132,9 +132,18 @@ let person = {
     }
 };
 
+//* Setting Person Name
 try{
     person.setName = "New user";
-    console.log(person.getName());
+    console.log(person.getName);
+}catch(error){
+    console.log("Error : ",error.message);
+}
+
+
+//* Setting Person Name to boolean value
+try{
+    person.setName = true;
 }catch(error){
     console.log("Error : ",error.message);
 }
