@@ -81,15 +81,60 @@ let no = 5;
 // }
 
 //? rethrow errors
-try{
-    throw new Error("Number is Greater than 40");
-}catch(error){
-    console.log("Error Occured!!!!");
-    if(no > 40){
-        console.log("Number is too low");
-    }else{
-        throw new Error("This is type Error");
+// try{
+//     throw new Error("Number is Greater than 40");
+// }catch(error){
+//     console.log("Error Occured!!!!");
+//     if(no > 40){
+//         console.log("Number is too low");
+//     }else{
+//         throw new Error("This is type Error");
+//     }
+// }finally{
+//     console.log("This is Final Statement");
+// }
+
+
+//? Check For Number
+// let x = "5";
+
+// try {
+//     if (x.trim() === "") throw "Empty";
+//     if (isNaN(x)) throw "Not a Number";
+//     x = Number(x);
+//     if(x > 5){
+//         throw "is Greater than 5";
+//     }
+//     if (x < 5) {
+//         throw "is less than 5";
+//     }
+//     console.log(x)
+// } catch (error) {
+//     console.log("Number is : ", error);
+// } finally {
+//     console.log("This is finally statement!!!!");
+// }
+
+
+let person = {
+    firstName : "Divesh",
+    lastName : "Jadhav",
+    getName(){
+        return `${this.firstName} ${this.lastName}`;
+    },
+    setName(name){
+        if(typeof(name) !== String){
+            throw new Error("You have Not sent an String Value");
+        }
+        let parts = name.split(" ");
+        this.firstName = parts[0];
+        this.lastName = parts[1];
     }
-}finally{
-    console.log("This is Final Statement");
+};
+
+try{
+    person.setName = "New user";
+    console.log(person.getName());
+}catch(error){
+    console.log("Error : ",error.message);
 }
