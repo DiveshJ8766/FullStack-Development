@@ -57,3 +57,14 @@ let groupedObj = people.reduce((accumulator,currentValue)=>{
 },{});
 
 console.log("Object : ",groupedObj)
+
+//? Reduce Right
+//* sum of element from left to right
+
+let numbers = [1,2,3,4,5,6,67,78,9,10];
+
+function sum(accumulator,currentValue){
+    return accumulator - currentValue;
+}
+
+console.log("Total : ",numbers.reduce(sum,0));
