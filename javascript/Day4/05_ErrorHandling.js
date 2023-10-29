@@ -96,54 +96,60 @@ let no = 5;
 
 
 //? Check For Number
-// let x = "5";
+let x ="8";
 
-// try {
-//     if (x.trim() === "") throw "Empty";
-//     if (isNaN(x)) throw "Not a Number";
-//     x = Number(x);
-//     if(x > 5){
-//         throw "is Greater than 5";
+try {
+    if (x.trim() === "") {
+        console.log("checked");
+        throw "Empty";
+    }
+    else if (isNaN(x)) {
+        console.log("Chekced 2");
+        throw "Not a Number";
+    }
+    else if ( Number(x) > 5) {
+        console.log("Checked 3")
+        throw "is Greater than 5";
+    }
+    else if(Number(x) < 5) {
+        console.log("Checked 4")
+        throw "is less than 5";
+    }
+} catch (error) {
+    console.log("Number : ", error);
+} finally {
+    console.log("This is finally statement!!!!");
+}
+
+
+// let person = {
+//     firstName : "Divesh",
+//     lastName : "Jadhav",
+//     get getName(){
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+//     set setName(name){
+//         if(typeof(name) !== 'string'){
+//             throw new Error("You have Not sent an String Value");
+//         }
+//         let parts = name.split(" ");
+//         this.firstName = parts[0];
+//         this.lastName = parts[1];
 //     }
-//     if (x < 5) {
-//         throw "is less than 5";
-//     }
-//     console.log(x)
-// } catch (error) {
-//     console.log("Number is : ", error);
-// } finally {
-//     console.log("This is finally statement!!!!");
+// };
+
+//* Setting Person Name
+// try{
+//     person.setName = "New user";
+//     console.log(person.getName);
+// }catch(error){
+//     console.log("Error : ",error.message);
 // }
 
 
-let person = {
-    firstName : "Divesh",
-    lastName : "Jadhav",
-    get getName(){
-        return `${this.firstName} ${this.lastName}`;
-    },
-    set setName(name){
-        if(typeof(name) !== 'string'){
-            throw new Error("You have Not sent an String Value");
-        }
-        let parts = name.split(" ");
-        this.firstName = parts[0];
-        this.lastName = parts[1];
-    }
-};
-
-//* Setting Person Name
-try{
-    person.setName = "New user";
-    console.log(person.getName);
-}catch(error){
-    console.log("Error : ",error.message);
-}
-
-
 //* Setting Person Name to boolean value
-try{
-    person.setName = true;
-}catch(error){
-    console.log("Error : ",error.message);
-}
+// try{
+//     person.setName = true;
+// }catch(error){
+//     console.log("Error : ",error.message);
+// }
