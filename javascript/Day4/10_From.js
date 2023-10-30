@@ -22,3 +22,52 @@ console.log("New Array : ",ans);
 let newSet = new Set(["Javascript","Angular","React","Vue","React"]);
 
 console.log("New Array : ",Array.from(newSet));
+
+//?  keys Method of Array
+
+let keys = numbers.keys();
+
+for(let key of keys){
+    console.log("Key : ",key);
+}
+
+
+console.log(`\n""""""""""""""""""""""""""\n`)
+
+//* Null value index is counted
+let num = [20,10,23,,89,53,19];
+
+let iteartor = num.keys();
+for(let key of iteartor){
+    console.log("Key : ",key);
+}
+
+console.log(`\n""""""""""""""""""""""""""\n`)
+
+
+//? Values Method of Array
+let values = numbers.values();
+for(let val of values){
+    console.log("Value : ",val);
+}
+
+console.log(`\n""""""""""""""""""""""""""\n`)
+
+let values1= num.values();
+for(let val of values1){
+    console.log("Value : ",val);
+}
+
+//* Values using next();
+let fruits = ["Apple","Mango","Banana","Grapes","Orange"];
+
+let iteartor1 = fruits.values();
+
+console.log(iteartor1.next().value);
+
+fruits[1] = "chiku";
+
+console.log(iteartor1.next().value);
+
+console.log(iteartor1.next().value);
+
