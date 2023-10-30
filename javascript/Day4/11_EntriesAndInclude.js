@@ -17,3 +17,16 @@ console.log("Third : ",ans.next().value);
 console.log("Fourth : ",ans.next().value);
 
 //? Includes
+
+let languages = ["Javascript","Java","Kotlin","C++","C","Go"];
+
+console.log(`\n""""""""""""""""""""""""""""""\n`)
+
+console.log("Includes : ",languages.includes("Java"));
+console.log("Includes : ",languages.includes("JAVA"));
+console.log("Includes : ",languages.includes("Ja"));
+
+console.log(`\n""""""""""""""""""""""""""""""\n`)
+
+console.log("Include With index : ",languages.includes("C++",-2));
+console.log("Include With index : ",languages.includes("C++",-3));
